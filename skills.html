@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Tea Station || Skills</title>
+    <!-- font-awesome -->
+    <link
+      rel="stylesheet"
+      href="./fontawesome-free-5.12.1-web/css/all.min.css"
+    />
+    <!-- custom css -->
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <!-- nav bar -->
+
+    <!-- correction >> didn't add id="nav-btn" in the span tag below, this id="nav-btn" property is the property used in this site javascript for opening the navbar-->
+    <div class="nav-button">
+      <span id="nav-btn"><i class="fas fa-bars"></i></span>
+    </div>
+
+    <!-- correction >>  Didn't add id="navbar", this id is used in this site js script to tell it this is the navbar. Also didn't add id="nav-close" in the span tag below, this id="nav-close" property is the property used in this site javascript for closing the navbar whenever clicked-->
+    <nav class="nav-bar" id="navbar">
+      <div class="nav-close-button">
+        <span id="nav-close"><i class="fas fa-times"></i></span>
+      </div>
+
+      <ul class="nav-items">
+        <!-- correction >> the links here in the nav bar needs to have same class each to in order to target with css instead of using "nav-items li {}", use the class nav-link-->
+        <li><a href="index.html" class="nav-link">home</a></li>
+        <li><a href="skills.html" class="nav-link">skills</a></li>
+        <li><a href="about.html" class="nav-link">about</a></li>
+        <li><a href="products.html" class="nav-link">products</a></li>
+      </ul>
+    </nav>
+    <!-- end of nav bar -->
+    <!-- header -->
+    <header class="header">
+      <div class="banner">
+        <h2>over one hundred flavours of</h2>
+        <h1>
+          specially <br />
+          crafted tea
+        </h1>
+        <a href="skills.html" class="btn banner-btn">explore</a>
+      </div>
+    </header>
+    <!-- end of header -->
+    <!-- skills section -->
+    <section class="skills clearfix">
+      <!-- single skill -->
+      <article class="skill">
+        <span class="skill-icon"><i class="fas fa-mug-hot"></i></span>
+        <h4 class="skill-title">made in US</h4>
+        <p class="skill-text">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium,
+          commodi.
+        </p>
+      </article>
+      <!-- end of single skill -->
+      <!-- single skill -->
+      <article class="skill">
+        <span class="skill-icon"><i class="fas fa-glass-cheers"></i></span>
+        <h4 class="skill-title">Relaxation</h4>
+        <p class="skill-text">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium,
+          commodi.
+        </p>
+      </article>
+      <!-- end of single skill -->
+      <!-- single skill -->
+      <article class="skill">
+        <span class="skill-icon"><i class="fas fa-bomb"></i></span>
+        <h4 class="skill-title">energy</h4>
+        <p class="skill-text">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium,
+          commodi.
+        </p>
+      </article>
+      <!-- end of single skill -->
+      <!-- single skill -->
+      <article class="skill">
+        <span class="skill-icon"><i class="fas fa-mortar-pestle"></i></span>
+        <h4 class="skill-title">family recipe</h4>
+        <p class="skill-text">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium,
+          commodi.
+        </p>
+      </article>
+      <!-- end of single skill -->
+    </section>
+    <!-- end of skills section -->
+    <!-- footer section -->
+    <section class="footer">
+      <div class="section-center">
+        <article class="footer-social-icons">
+          <!-- correction >> this social icon structure below that is commenented is what i first wrote, but the social icon was not clickable in other to take users to the social media page-->
+          <!-- <span class="social-icon"
+            ><i class="fab fa-facebook"><a href="#"></a></i
+          ></span> -->
+          <!-- end of correction >> this social icon structure is what i first wrote, but the social icon was not clickable in other to take users to the social media page-->
+          <!-- social icon -->
+          <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
+          <!-- social icon -->
+          <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+          <!-- social icon -->
+          <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+        </article>
+        <artcle class="footer-text">
+          <h4>
+            &copy; 2025 <span class="company-name">tea station</span> all rights
+            reserved
+          </h4>
+        </artcle>
+      </div>
+    </section>
+    <!-- end of footer section -->
+
+    <script src="app.js"></script>
+  </body>
+</html>
